@@ -7,8 +7,7 @@ namespace DotNET_Benchmarking
     {
         static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<Md5VsSha256>();
-            Console.WriteLine(summary);
+            var summary = BenchmarkRunner.Run(typeof(Program).Assembly);
         }
     }
 }
